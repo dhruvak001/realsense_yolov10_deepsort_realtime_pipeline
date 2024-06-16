@@ -24,67 +24,17 @@ Ensure that your RealSense camera is connected to your system and note its seria
 - Step 2: Model and Class Names</br>
 Ensure that the model weights and class names file are in the specified paths:</br>
 
-Model weights file: /path/weights/best.pt</br>
-Class names file: /path/pipeline/class.names
+-- Model weights file: /path/weights/best.pt</br>
+-- Class names file: /path/pipeline/class.names
 
 - Step 3: Run the Script
 Run the script by executing the following command:</br>
 
 ```python main.py```
 
-Stopping the Script
+- Stopping the Script
 Press q to stop the script and close the display window.
 
-Configuration
-Camera Configuration
-The configure_camera function configures the RealSense camera with the specified serial number and sets up the video stream parameters.
-
-python
-Copy code
-def configure_camera(serial_number):
-    ...
-Model Initialization
-The initialize_model function loads the YOLOv10 model with the specified weights.
-
-python
-Copy code
-def initialize_model():
-    ...
-Class Names Loading
-The load_class_names function reads the class names from a specified file.
-
-python
-Copy code
-def load_class_names():
-    ...
-Frame Processing
-The process_frame function processes each frame to detect objects using the YOLOv10 model.
-
-python
-Copy code
-def process_frame(frame, model, tracker, class_names, colors, conf_threshold=0.5):
-    ...
-Drawing Tracks
-The draw_tracks function draws the bounding boxes and labels for tracked objects on the frame.
-
-python
-Copy code
-def draw_tracks(frame, tracks, class_names, colors, class_counters, track_class_mapping, sent_ids):
-    ...
-Capturing Frames
-The capture_frames function captures frames from the RealSense camera and processes them in a loop.
-
-python
-Copy code
-def capture_frames(pipeline, model, tracker, class_names, colors, class_counters, track_class_mapping, sent_ids):
-    ...
-Running the Camera
-The run_camera function starts a separate thread to capture and process frames.
-
-python
-Copy code
-def run_camera(pipeline, model, tracker, class_names, colors, class_counters, track_class_mapping, sent_ids):
-    ...
 Features
 Object Detection: Uses YOLOv10 for detecting objects in the frames.
 Object Tracking: Tracks detected objects across frames using DeepSORT.
