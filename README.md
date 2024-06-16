@@ -24,31 +24,30 @@ Ensure that your RealSense camera is connected to your system and note its seria
 - Step 2: Model and Class Names</br>
 Ensure that the model weights and class names file are in the specified paths:</br>
 
--- Model weights file: /path/weights/best.pt</br>
--- Class names file: /path/pipeline/class.names
 
 - Step 3: Run the Script
 Run the script by executing the following command:</br>
 
 ```python main.py```
 
-- Stopping the Script
+- Stopping the Script</br>
 Press q to stop the script and close the display window.
 
-Features
-Object Detection: Uses YOLOv10 for detecting objects in the frames.
-Object Tracking: Tracks detected objects across frames using DeepSORT.
-Camera Integration: Captures real-time video feed from a RealSense camera.
-Logging: Provides detailed logs for each step of the process.
-Logging
+## Features
+- Object Detection: Uses YOLOv10 for detecting objects in the frames.
+- Object Tracking: Tracks detected objects across frames using DeepSORT.
+- Camera Integration: Captures real-time video feed from a RealSense camera.
+- Logging: Provides detailed logs for each step of the process.
+- 
+### Logging
 Logging is configured to provide detailed information about the process. Logs are printed to the console.
 
-python
-Copy code
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-Troubleshooting
-Camera Not Found: Ensure the RealSense camera is connected and the serial number is correct.
-Model Weights Not Found: Verify the model weights file path.
-Class Names File Not Found: Verify the class names file path.
-Dependencies: Ensure all required libraries are installed.
+
+```logging.basicConfig(level=logging.INFO)```
+```logger = logging.getLogger(__name__)```
+
+### Troubleshooting
+- Camera Not Found: Ensure the RealSense camera is connected and the serial number is correct.
+- Model Weights Not Found: Verify the model weights file path.
+- Class Names File Not Found: Verify the class names file path.
+- Dependencies: Ensure all required libraries are installed.
