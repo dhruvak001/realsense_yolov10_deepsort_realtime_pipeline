@@ -27,7 +27,6 @@ Ensure that the model weights and class names file are in the specified paths:</
 
 - Step 3: Run the Script
 Run the script by executing the following command:</br>
-
 ```python main.py```
 
 - Stopping the Script</br>
