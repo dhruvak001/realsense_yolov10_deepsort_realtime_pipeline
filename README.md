@@ -2,6 +2,14 @@
 
 This repository contains code for an object detection and tracking system using a RealSense camera, YOLOv10 for object detection, and DeepSORT for tracking. The system captures frames from the camera, processes them to detect objects, and tracks the detected objects over time.
 
+## Introduction
+This system leverages state-of-the-art deep learning models and tracking algorithms to achieve robust and accurate object detection and tracking. The main components of the system are:
+
+- YOLOv10: A highly efficient and accurate object detection model.
+- DeepSORT: A deep learning-based object tracking algorithm.
+- RealSense Camera: Provides high-quality video streams for real-time processing.
+- The goal of the system is to detect objects in real-time from the video stream provided by the RealSense camera and to track these objects across frames, providing consistent identifiers for each tracked object.
+
 ### Prerequisites
 - Python 3.7 or higher
 - Required Libraries:
