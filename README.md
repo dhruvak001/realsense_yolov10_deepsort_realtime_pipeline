@@ -45,7 +45,18 @@ Press q to stop the script and close the display window.
 - Object Tracking: Tracks detected objects across frames using DeepSORT.
 - Camera Integration: Captures real-time video feed from a RealSense camera.
 - Logging: Provides detailed logs for each step of the process.
-- 
+  
+
+## Theory
+- Object Detection</br>
+YOLOv10 (You Only Look Once) is an advanced deep learning model designed for object detection. It processes an entire image in a single forward pass, predicting bounding boxes and class probabilities for objects within the image. YOLOv10 is known for its speed and accuracy, making it suitable for real-time applications.
+
+- Object Tracking</br>
+DeepSORT (Simple Online and Realtime Tracking with a Deep Association Metric) is a robust object tracking algorithm that combines deep learning with traditional tracking methods. DeepSORT uses a deep appearance descriptor to match detected objects across frames, ensuring consistent tracking even in crowded scenes.
+
+- Camera Integration</br>
+The RealSense Camera by Intel provides high-resolution video streams and depth information, which are essential for accurate object detection and tracking. The RealSense SDK (pyrealsense2) allows for easy integration and configuration of the camera.
+
 ### Logging
 Logging is configured to provide detailed information about the process. Logs are printed to the console.
 
