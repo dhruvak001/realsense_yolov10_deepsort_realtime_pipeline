@@ -1,6 +1,6 @@
 # Realsense Yolov10 Deepsort Realtime Pipeline
 
-This repository contains code for an object detection and tracking system using a RealSense camera, YOLOv10 for object detection, and DeepSORT for tracking. The system captures frames from the camera, processes them to detect objects, and tracks the detected objects over time......
+This repository contains code for an object detection and tracking system using a RealSense camera, YOLOv10 for object detection, and DeepSORT for tracking. The system captures frames from the camera, processes them to detect objects, and tracks the detected objects over time.......
 
 ## Introduction
 This system leverages state-of-the-art deep learning models and tracking algorithms to achieve robust and accurate object detection and tracking. The main components of the system are:
